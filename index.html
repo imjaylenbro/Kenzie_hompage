@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
 <!--header ---------->
     <header>
  <!-- Nav bar ------------>
-        <nav class="nav">
-            <ul class="nav_list">
+        <nav>
+            <ul>
                 <li><a href="">Admission</a></li>
                 <li><a href="">Program</a></li>
                 <li><a href="">Pricing</a></li>
-                <li><a href="">Schedule a tour</a></li>
+                <li><a class="tour-button"  href="">Schedule a tour</a></li>
             </ul>
         </nav>
  <!--- Design Section -------->
@@ -116,23 +117,27 @@
             
          </section>
     </main>
-    <!-- forms ------->
     <footer class="footer">
-      <form action="" class="footer_chat-form">
-          <h2>Let's Chat</h2>
-          <p>Kenzie Academy is no small commitment. If we've piqued your interest today, we'd love to keep the coversation going.</p>
-          <!-- first and last name ------->
-          <input type="text" name="fname" placeholder="First Name">
-          <label for="lname"></label>
-          <input type="text" name="lname" placeholder="Last Name">
-          <br>
-          <!---Email-->
-         <input type="email" name="email" placeholder="Email"> <br>
-         <!-- phone number --->
-         <input type="tel" name="tel" placeholder="000-000-000"><br>
-         <!--- submit ---->
-         <input type="submit" value="submit">
+        <h2>Let's Chat</h2>
+        <p>Kenzie Academy is no small commitment. If we've piqued your interest today, we'd love to keep the coversation going.</p>
+        <!-- forms ------->
+        <form class="footer_form">
+         <!-- first and last name ------->
+            <div class="footer-form_name"> 
 
+                <input type="text" name="fname" placeholder="First Name">
+                <input type="text" name="lname" placeholder="Last Name">
+             </div>
+             <div class="footer-form_info"> 
+
+                 <!---Email-->
+                 <input class="footer-form_email" type="email" name="email" placeholder="Email"> <br>
+                 <!-- phone number --->
+                 <input class="footer-form_phone" type="tel" name="tel" placeholder="000-000-000"><br>
+                 <!--- submit ---->
+                 <input class="footer-form_submit" type="submit" value="submit">
+                </div>
+                
 
       </form>
     </footer>

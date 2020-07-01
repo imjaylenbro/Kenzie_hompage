@@ -1,8 +1,54 @@
-/* base ------- */
-/* layout -------- */
-/* blocks */
+body {
+  font-family: 'Nunito', sans-serif;
+}
 
+h1, h2 {
+  text-align: center;
+}
 
-/* desktop */
-/*  layout ------- */
-/* blocks -------- */
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 110%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 12px;
+  text-decoration: underline;
+}
+
+.tour-button, .footer-form_submit {
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 8em;
+  text-align: center;
+  display: inline-block;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.footer-form_email, .footer-form_phone, .footer-form_name {
+  margin: .3em;
+}
+/*# sourceMappingURL=styles.css.map */
