@@ -48,7 +48,8 @@ nav li {
   justify-content: start;
 }
 
-.footer-form_email, .footer-form_phone, .footer-form_name {
+.footer-form_email, .footer-form_phone {
   margin: .3em;
+  width: 19rem;
 }
 /*# sourceMappingURL=styles.css.map */
