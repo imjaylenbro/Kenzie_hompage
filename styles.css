@@ -1,9 +1,15 @@
-body {
-  font-family: 'Nunito', sans-serif;
-  margin-left: 20px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0rem;
 }
 
-h1, h2 {
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 20px 20px 40px 20px;
+}
+
+h1, h2, h4 {
   text-align: center;
 }
 
@@ -18,6 +24,7 @@ h2 {
 
 p {
   text-align: center;
+  padding: 1em;
 }
 
 nav {
@@ -34,15 +41,30 @@ nav li {
   text-decoration: underline;
 }
 
+nav a {
+  color: #f8f5f5;
+}
+
 .tour-button, .footer-form_submit {
-  background-color: blue;
+  background-color: #00356B;
   text-decoration: none;
-  color: white;
+  color: #f8f5f5;
   padding: 0.5em;
   border-radius: 6px;
   width: 7em;
   text-align: center;
   display: inline-block;
+}
+
+.tour-button {
+  background-color: #A6FFDC;
+  color: #00356B;
+}
+
+.header-section {
+  background-color: #00356B;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 .header_ham-menu {
@@ -54,15 +76,15 @@ nav li {
 
 .bar {
   display: inline-block;
-  height: 5px;
-  margin: 3px;
-  background-color: midnightblue;
+  height: 3px;
+  margin: 1px;
+  background-color: #f8f5f5;
   border-radius: 10%;
 }
 
 .design-section_video {
   width: 90%;
-  margin: 0px 20px 100px opx;
+  margin: 0px px 0px opx;
 }
 
 .quote-section {
@@ -71,22 +93,26 @@ nav li {
 
 .event-section {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .event-section_card {
-  margin: 15px;
+  margin: 30px;
 }
 
 .event-section_button {
-  border: 1px teal solid;
+  border: 1px #00356B solid;
   background-color: white;
-  color: teal;
+  color: #00356B;
   padding: .5em;
+  margin-top: 40px;
 }
 
 .compare-section {
   background-color: lightgray;
   padding: 14px;
+  margin: 15px 0px;
 }
 
 .compare-section_button {
@@ -95,12 +121,16 @@ nav li {
   color: white;
   padding: 9px;
   position: relative;
-  left: 28%;
+  left: 25%;
 }
 
 .meet-kenzie {
   display: grid;
   grid-row: 1/4;
+}
+
+.meet-kenzie_title {
+  font-weight: bold;
 }
 
 .kenzie-community_cards {
@@ -116,6 +146,7 @@ nav li {
 
 .student-section_title {
   font-size: 25px;
+  text-align: center;
 }
 
 .student-section_video {
@@ -154,6 +185,7 @@ nav li {
   }
   .event-section {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   .compare-section_button {
@@ -162,8 +194,7 @@ nav li {
   }
   .kenzie-community {
     display: grid;
-    grid-template-columns: 4em 4em 4em 4em;
-    grid-gap: 8rem;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 100px;
   }
   .student-section {
@@ -187,6 +218,8 @@ nav li {
   .footer_form {
     text-align: center;
     width: 80%;
+    position: relative;
+    left: 10%;
   }
   .footer-form_email, .footer-form_phone {
     margin: .5em;
