@@ -64,17 +64,18 @@ justify-content: center;
 // ---- design secetion ---- 
 .design-section_video {
     width: 90%;
-    margin-bottom: 100px;
+    margin:0px 20px 100px opx;
 }
 
 // ------ backquotes ------
-
+.quote-section {display: flex;}
 
 // ------ event section ------ 
 .event-section {
-    display: grid;
-    grid-template-rows: minmax( 50px, auto);
+    display: flex;
 }
+
+
 .event-section_card {
     margin: 15px;
 }
@@ -95,7 +96,7 @@ background-color: teal;
 color: white;
 padding: 9px;
 position: relative;
-left: 20%;
+left: 28%;
 }
 // ----- meet kenzie ----- 
 .meet-kenzie{
@@ -108,13 +109,15 @@ left: 20%;
 .kenzie-community_cards {
     
     display: grid;
-    grid-row:  1/1;
+    grid-template-columns: 1fr;
 }
 .student-section{
     margin-bottom: 105px;
-    font-size: 18px;
     display: grid;
     grid-template-rows: minmax(100, auto) ;
+}
+.student-section_title{
+    font-size: 25px;
 }
 .student-section_video {
     width: 69%;
@@ -126,15 +129,12 @@ left: 20%;
 .footer_form {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center
+    
 }
 
 
-.footer-form_email, .footer-form_phone, .footer-form_name {
-    margin: .5em;
-    width: 9rem;
-}
- 
+
 // desktop------
 
 @media (min-width: 750px){
@@ -165,9 +165,51 @@ left: 20%;
     .quote-section_card{
         display: flex;
     }
+    // ------ event section ----- 
     .event-section {
         display: flex;
         justify-content: space-between;;
     }
     
-}
+    // ------ compare ------- 
+    .compare-section_button {
+        position: relative;
+        left: 41%
+    }
+    // ------- Kenzie community ----- 
+    .kenzie-community {
+    
+        display: grid;
+        grid-template-columns: 4em 4em 4em 4em;
+        grid-gap: 8rem;
+        margin-bottom: 100px;
+       }
+    .student-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        // grid-template-rows: 1fr 1fr;
+        grid-gap: .5em;
+        grid-template-areas: "student-section_video  student-section_title"
+        "student-section_video  student-section_message";
+    }
+    .student-section_video{
+        grid-area: student-section_video;
+        width: 80%;
+    }
+    .student-section_title {
+        grid-area: student-section_title;
+    }
+    .student-section_message {
+        grid-area: student-section_message;
+        position: relative;
+        bottom: 100px;
+    }
+    .footer_form {
+        text-align: center;
+        width: 80%;
+    }
+     .footer-form_email, .footer-form_phone, {
+         margin: .5em;
+         width: 19rem;
+     }
+    
