@@ -65,11 +65,6 @@ nav li {
   margin-bottom: 100px;
 }
 
-.quote-section {
-  display: grid;
-  grid-template-rows: minmax(100px, auto);
-}
-
 .event-section {
   display: grid;
   grid-template-rows: minmax(50px, auto);
@@ -102,8 +97,25 @@ nav li {
 
 .meet-kenzie {
   display: grid;
-  grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row: 1/4;
+}
+
+.kenzie-community_cards {
+  display: grid;
+  grid-row: 1/1;
+}
+
+.student-section {
+  margin-bottom: 105px;
+  font-size: 18px;
+  display: grid;
+  grid-template-rows: minmax(100, auto);
+}
+
+.student-section_video {
+  width: 69%;
+  position: relative;
+  left: 20%;
 }
 
 .footer_form {
@@ -112,8 +124,36 @@ nav li {
   justify-content: start;
 }
 
-.footer-form_email, .footer-form_phone {
-  margin: .3em;
-  width: 19rem;
+.footer-form_email, .footer-form_phone, .footer-form_name {
+  margin: .5em;
+  width: 9rem;
+}
+
+@media (min-width: 750px) {
+  .header-section_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  .header_ham-menu {
+    display: none;
+  }
+  .design-section_video {
+    width: 60%;
+    position: relative;
+    left: 20%;
+  }
+  .quote-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .quote-section_card {
+    display: flex;
+  }
+  .event-section {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

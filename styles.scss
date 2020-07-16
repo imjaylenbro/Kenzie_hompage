@@ -32,6 +32,7 @@ nav {
 // blocks --- 
 
 // ----- buttons -------
+
 .tour-button, .footer-form_submit {
     background-color: blue;
     text-decoration: none;
@@ -67,10 +68,7 @@ justify-content: center;
 }
 
 // ------ backquotes ------
-.quote-section {
-    display: grid;
-    grid-template-rows: minmax(100px, auto) ;
-}
+
 
 // ------ event section ------ 
 .event-section {
@@ -100,17 +98,31 @@ position: relative;
 left: 20%;
 }
 // ----- meet kenzie ----- 
-.meet-kenzie {
+.meet-kenzie{
     display: grid;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row: 1/4;
+   
 }
 // ----- kenzie community ----
 
+.kenzie-community_cards {
+    
+    display: grid;
+    grid-row:  1/1;
+}
+.student-section{
+    margin-bottom: 105px;
+    font-size: 18px;
+    display: grid;
+    grid-template-rows: minmax(100, auto) ;
+}
+.student-section_video {
+    width: 69%;
+    position: relative;
+    left: 20%
+}
 // ------ footer ------
-.footer {
-   
-} 
+
 .footer_form {
     display: flex;
     flex-direction: column;
@@ -118,14 +130,44 @@ left: 20%;
 }
 
 
-.footer-form_email, .footer-form_phone {
-    margin: .3em;
-    width: 19rem;
+.footer-form_email, .footer-form_phone, .footer-form_name {
+    margin: .5em;
+    width: 9rem;
 }
-  
+ 
+// desktop------
 
+@media (min-width: 750px){
 
     
+    // ----- header ---- 
+    .header-section_nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        
+    }
+    .header_ham-menu {
+        display: none;
+    }
     
-
-  
+    // ------ design ---- 
+    .design-section_video {
+        width: 60%;
+        position: relative;
+        left: 20%;    }
+//  ----- back quotes ------ 
+    .quote-section {
+        display: flex;
+        flex-direction: row;
+    }
+    .quote-section_card{
+        display: flex;
+    }
+    .event-section {
+        display: flex;
+        justify-content: space-between;;
+    }
+    
+}
