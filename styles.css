@@ -1,5 +1,6 @@
 body {
   font-family: 'Nunito', sans-serif;
+  margin-left: 20px;
 }
 
 h1, h2 {
@@ -15,10 +16,16 @@ h2 {
   font-size: 110%;
 }
 
+p {
+  text-align: center;
+}
+
 nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  flex-wrap: wrap;
+  display: none;
 }
 
 nav li {
@@ -33,13 +40,70 @@ nav li {
   color: white;
   padding: 0.5em;
   border-radius: 6px;
-  width: 8em;
+  width: 7em;
   text-align: center;
   display: inline-block;
 }
 
-.footer {
-  text-align: center;
+.header_ham-menu {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bar {
+  display: inline-block;
+  height: 5px;
+  margin: 3px;
+  background-color: midnightblue;
+  border-radius: 10%;
+}
+
+.design-section_video {
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.quote-section {
+  display: grid;
+  grid-template-rows: minmax(100px, auto);
+}
+
+.event-section {
+  display: grid;
+  grid-template-rows: minmax(50px, auto);
+}
+
+.event-section_card {
+  margin: 15px;
+}
+
+.event-section_button {
+  border: 1px teal solid;
+  background-color: white;
+  color: teal;
+  padding: .5em;
+}
+
+.compare-section {
+  background-color: lightgray;
+  padding: 14px;
+}
+
+.compare-section_button {
+  align-items: center;
+  background-color: teal;
+  color: white;
+  padding: 9px;
+  position: relative;
+  left: 20%;
+}
+
+.meet-kenzie {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 
 .footer_form {

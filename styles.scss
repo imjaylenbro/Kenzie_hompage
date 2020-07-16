@@ -1,6 +1,7 @@
 ////// layout 
 body {
     font-family: 'Nunito', sans-serif;
+    margin-left: 20px;
 }
 h1, h2 {
     text-align: center;
@@ -12,11 +13,15 @@ h2 {
     font-weight: 100;
     font-size: 110%;
 }
-
+p {
+    text-align: center;
+}
 nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex-wrap: wrap;
+    display: none;
     
     li  {
         display: inline-block;
@@ -25,18 +30,86 @@ nav {
     }
 }
 // blocks --- 
+
+// ----- buttons -------
 .tour-button, .footer-form_submit {
     background-color: blue;
     text-decoration: none;
     color: white;
     padding: 0.5em;
     border-radius: 6px;
-    width: 8em;
+    width: 7em;
     text-align: center;
     display: inline-block;
+    
 }
+// ------ hamburger ------ 
+.header_ham-menu {
+    width: 50px;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.bar {
+    display: inline-block;
+    height: 5px;
+    margin: 3px;
+    background-color: midnightblue;
+    border-radius: 10%;
+
+}
+
+// ---- design secetion ---- 
+.design-section_video {
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+// ------ backquotes ------
+.quote-section {
+    display: grid;
+    grid-template-rows: minmax(100px, auto) ;
+}
+
+// ------ event section ------ 
+.event-section {
+    display: grid;
+    grid-template-rows: minmax( 50px, auto);
+}
+.event-section_card {
+    margin: 15px;
+}
+.event-section_button {
+    border: 1px teal solid;
+    background-color: white;
+    color: teal;
+    padding: .5em;
+}
+// ----- compare ----
+.compare-section {
+    background-color:  lightgray;
+    padding: 14px;
+}
+.compare-section_button {
+align-items: center;
+background-color: teal;
+color: white;
+padding: 9px;
+position: relative;
+left: 20%;
+}
+// ----- meet kenzie ----- 
+.meet-kenzie {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+// ----- kenzie community ----
+
+// ------ footer ------
 .footer {
-    text-align: center;
+   
 } 
 .footer_form {
     display: flex;
